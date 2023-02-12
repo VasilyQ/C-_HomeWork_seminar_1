@@ -4,8 +4,16 @@
 
 Console.WriteLine("Введите число: ");
 double n = Convert.ToDouble(Console.ReadLine());
-for(double i = 1; i <= n; i = i + 1)
+
+if (n >= 2)
 {
+    for(double i = 1; i <= n; i = i + 1)
+    {
     if (i % 2 == 0)
         Console.WriteLine(i);
+    }
+}  
+else
+{
+    Console.WriteLine("Нет четных(либо число отрицательное).");
 }
